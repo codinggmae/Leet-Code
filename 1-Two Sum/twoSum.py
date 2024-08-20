@@ -9,3 +9,11 @@ class Solution(object):
                 #our result must be a list of different indexes so i say when i and j is not equal then return list
                 if nums[j] == complement and i != j:
                     return [i,j]
+                
+                
+#time complexity : O(n)
+#space complexity : O(n)
+class Solution(object):
+    #in this solution we calculate complement of each element and add it to a dictionary and search it in dictionary
+    def twoSum(self, nums, target):
+        ...
