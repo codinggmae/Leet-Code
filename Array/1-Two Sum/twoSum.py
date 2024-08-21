@@ -16,4 +16,14 @@ class Solution(object):
 class Solution(object):
     #in this solution we calculate complement of each element and add it to a dictionary and search it in dictionary
     def twoSum(self, nums, target):
-        ...
+        dictionary = {}
+        for i,num in enumerate(nums):
+            #find complement
+            complement = target - num
+            #if complement is in the dictionary return answer else add that num(key) and index(value) to dictionary
+            if complement in dictionary:
+                return [dictionary[complement], i]
+            else:
+                dictionary[num] = i
+        #if can't file answer return an empty list
+        return []
