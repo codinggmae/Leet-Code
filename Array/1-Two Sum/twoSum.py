@@ -4,11 +4,14 @@ class Solution(object):
     #in this solution we calculate complement of each element and search it in list 
     def twoSum(self, nums, target):
         for i in range(len(nums)):
+            #find complement
             complement = target - nums[i]
             for j in range(len(nums)):
                 #our result must be a list of different indexes so i say when i and j is not equal then return list
                 if nums[j] == complement and i != j:
                     return [i,j]
+        #if can't file answer return an empty list
+        return []
                 
                 
 #time complexity : O(n)
