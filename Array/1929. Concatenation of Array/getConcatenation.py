@@ -1,6 +1,5 @@
 #time complexity : O(n)
 #spcae complexity : O(n)
-
 class Solution(object):
     #in this solution i reserved a new list with size of n * 2 and initial it
     def getConcatenation(self, nums):
@@ -16,8 +15,8 @@ class Solution(object):
     
 #time complexity : O(n)
 #spcae complexity : O(n)
-
 class Solution(object):
     #in this solution i duplicate old list and return new list with size of n * 2 (this is benefit of python)
     def getConcatenation(self, nums):
         return nums * 2
+    
